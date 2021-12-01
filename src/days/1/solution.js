@@ -1,5 +1,4 @@
 const fs = require('fs')
-const input = fs.readFileSync('./input.txt', 'ascii')
 const R = require('ramda')
 
 const solutionOne = R.pipe(
@@ -17,4 +16,4 @@ const parseInput = R.pipe(
   R.map(Number)
 )
 
-R.pipe(parseInput, solutionTwo, console.log)(input)
+module.exports = R.pipe(parseInput, solutionTwo, console.log)
