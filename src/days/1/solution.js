@@ -8,7 +8,8 @@ const solutionOne = R.pipe(
 )
 const solutionTwo = R.pipe(
   R.aperture(3),
-  R.map(R.sum), solutionOne
+  R.map(R.sum),
+  solutionOne
 )
 
 const parseInput = R.pipe(
