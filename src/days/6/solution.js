@@ -25,7 +25,7 @@ const rotate = R.converge(R.append, [R.head, R.tail])
 const solution2 = R.pipe(
   R.reduce((acc, v) => { acc[v] += 1; return acc }, R.repeat(0, 9)),
   initState => R.reduce(R.pipe(
-    R.tap(console.log),
+    R.identity, // ramda breaks if I don't do this for some reason
     rotate,
     R.converge(R.adjust(6), [
       R.pipe(R.nth(8), R.add),
