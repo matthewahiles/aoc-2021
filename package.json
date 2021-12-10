@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/matthewahiles/aoc-2021#readme",
   "dependencies": {
+    "parsimmon": "^1.18.0",
     "ramda": "^0.27.1"
   },
   "devDependencies": {
