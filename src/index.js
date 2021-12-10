@@ -1,5 +1,6 @@
 const fs = require('fs/promises')
 const ee = require('events')
+ee.setMaxListeners(25)
 
 class ChangeEmitter extends ee {}
 
